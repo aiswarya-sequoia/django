@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Display</title>
+    </head>
+    <body>
+        <center>
+        <h2 style="text-align:center;background-color:#fff0e6;font:fantasy;font-size:40px">Details Of Books</h2><br>
+        <table border="2" align="center" cellpadding="10" cellspacing="0">
+            <tr>
+                <th style="height:35px;width:200px;text-align:center;background-color:#ffa366;font-size:25px">Name</th>
+                <th style="height:35px;width:200px;text-align:center;background-color:#ffa366;font-size:25px"> Author </th>
+                <th style="height:35px;width:200px;text-align:center;background-color:#ffa366;font-size:25px"> Edition </th>
+            </tr>
+            {%for i in books%}
+            <tr>
+                <td style="height:30px;width:200px;text-align:center;background-color:#ffa366;font-size:20px">{{i.Name}}</td>
+                <td style="height:30px;width:200px;text-align:center;background-color:#ffa366;font-size:20px">{{i.Author}}</td>
+                <td style="height:30px;width:200px;text-align:center;background-color:#ffa366;font-size:20px">{{i.Edition}}</td>               
+            </tr>
+            {%endfor%}
+        </table>
+    </center>
+    </body>
+</html>

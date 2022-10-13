@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="burlywood">
+    <center>
+        <h1 style="font-size: 40pt;color:green;text-align:center;">Details of Students</h1>
+    <table border="1">
+        <tr>
+            <th>
+                Student Name
+            </th>
+            <th>
+                Student Age
+            </th>
+            <th>
+                Delete
+            </th>
+            <th>
+                Edit
+            </th>
+           
+        </tr>
+        {% for i in student %}
+           <tr>
+            <td>{{i.Student_name}}</td>
+            <td>{{i.Student_age}}</td>
+            <td><a href="delete/{{i.Student_id}}">Delete</a></td>
+            <td><a href="edit/{{i.Student_id}}">Edit</a></td>
+           </tr>
+        {%endfor%}
+    </table>
+</center>
+</body>
+</html>
