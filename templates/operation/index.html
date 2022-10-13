@@ -1,0 +1,24 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: burlywood;">
+    <h1 style="font-size: 50pt;color:crimson;text-align:center">Enter Student Details</h1>
+    <center>
+    <form action="add" method="post" style="text-align:center">
+        {%csrf_token%}
+        Name <input type="text" name="name"><br>
+        <br>
+        Age <input type="text" name="age"><br>
+        <br>
+        <input type="submit" value="ADD" style="background-color: chocolate;"> 
+    </form>
+    </center>
+</body>
+</html>
